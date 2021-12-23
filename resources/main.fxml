@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="262.0" prefWidth="433.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.rpr.Controller">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <ListView fx:id="listKorisnici" prefHeight="200.0" prefWidth="100.0" GridPane.columnSpan="2" GridPane.rowSpan="5">
+         <GridPane.margin>
+            <Insets left="10.0" right="10.0" top="10.0" />
+         </GridPane.margin>
+         <padding>
+            <Insets top="5.0" />
+         </padding></ListView>
+      <Label text="Ime:" GridPane.columnIndex="2">
+         <padding>
+            <Insets top="5.0" />
+         </padding></Label>
+      <Label text="Prezime" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <padding>
+            <Insets top="5.0" />
+         </padding></Label>
+      <Label text="E-mail:" GridPane.columnIndex="2" GridPane.rowIndex="2">
+         <padding>
+            <Insets top="5.0" />
+         </padding></Label>
+      <Label text="Korisničko ime:" GridPane.columnIndex="2" GridPane.rowIndex="3">
+         <padding>
+            <Insets top="5.0" />
+         </padding></Label>
+      <Label text="Lozinka" GridPane.columnIndex="2" GridPane.rowIndex="4">
+         <padding>
+            <Insets top="5.0" />
+         </padding></Label>
+      <Label>
+         <padding>
+            <Insets top="5.0" />
+         </padding></Label>
+      <Button fx:id="dugmeDodaj" mnemonicParsing="false" onAction="#dodajKorisnika" prefWidth="70.0" text="Dodaj" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.rowIndex="5">
+         <GridPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </GridPane.margin>
+         <padding>
+            <Insets top="5.0" />
+         </padding>
+      </Button>
+      <Button fx:id="dugmeKraj" mnemonicParsing="false" onAction="#prekiniProgram" prefWidth="70.0" text="Kraj" GridPane.columnIndex="4" GridPane.rowIndex="5">
+         <padding>
+            <Insets top="5.0" />
+         </padding>
+         <GridPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </GridPane.margin></Button>
+      <TextField fx:id="imeF" GridPane.columnIndex="3" GridPane.columnSpan="2">
+         <padding>
+            <Insets top="5.0" />
+         </padding>
+         <GridPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </GridPane.margin></TextField>
+      <TextField fx:id="prezimeF" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="1">
+         <padding>
+            <Insets top="5.0" />
+         </padding>
+         <GridPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </GridPane.margin></TextField>
+      <TextField fx:id="emailF" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="2">
+         <padding>
+            <Insets top="5.0" />
+         </padding>
+         <GridPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </GridPane.margin></TextField>
+      <TextField fx:id="korisnickoImeF" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="3">
+         <padding>
+            <Insets top="5.0" />
+         </padding>
+         <GridPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </GridPane.margin></TextField>
+      <PasswordField GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="4">
+         <GridPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </GridPane.margin>
+      </PasswordField>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</GridPane>
